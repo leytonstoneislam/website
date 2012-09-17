@@ -5,5 +5,9 @@ class ApplicationController < ActionController::Base
 
   end
 
+  def prayer_times
+
+  end
+
 
 end
