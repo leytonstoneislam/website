@@ -17,6 +17,14 @@ h1, h2, h3 {
     color: #0285CE;
 }
 
+.detail {
+    margin-top: 20px;
+}
+
+#content h2 {
+    margin-bottom: 20px;
+}
+
 h1 {
     font-size: 2em;
 }

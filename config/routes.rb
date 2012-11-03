@@ -1,6 +1,10 @@
 MosqueSite::Application.routes.draw do
   get "home/index"
   get "home/prayer_times"
+  get "home/contact_us"
+  get "home/visit_us"
+  get "home/madrasah"
+  get "home/services"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

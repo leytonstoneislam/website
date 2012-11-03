@@ -11,12 +11,13 @@
 <div id="menu-wrapper">
   <div id="menu">
     <ul>
-      <li class="current_page_item"><a href="#">Homepage</a></li>
-      <li><a href="/home/prayer_times">Prayer times</a></li>
-      <li><a href="#">Events & Activities</a></li>
-      <li><a href="#">Location</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Donate</a></li>
+      <li <%if action_name == "index"%>class="current_page_item"<%end%>><%= link_to "Home", :controller => "home" %></li>
+      <li <%if action_name == "prayer_times"%>class="current_page_item"<%end%>><%= link_to "Prayer times", :controller => "home", :action => "prayer_times" %></li>
+      <li <%if action_name == "services"%>class="current_page_item"<%end%>><%= link_to "Services", controller: "home", :action => "services" %></li>
+      <li <%if action_name == "madrasah"%>class="current_page_item"<%end%>><%= link_to "Madrasah", controller: "home", :action => "madrasah" %></li>
+      <li <%if action_name == "visit_us"%>class="current_page_item"<%end%>><%= link_to "Visit us", controller: "home", :action => "visit_us" %></li>
+      <li <%if action_name == "contact_us"%>class="current_page_item"<%end%>><%= link_to "Contact us", controller: "home", :action => "contact_us" %></li>
+      <li <%if action_name == "donate"%>class="current_page_item"<%end%>><a href="#">Donate</a></li>
     </ul>
   </div>
   <!-- end #menu -->
@@ -31,7 +32,7 @@
     </div>
   </div>
 </div>
-<div id="banner"><img src="/images/img04.jpg" width="1000" height="350" alt=""/></div>
+<div id="banner"><img src="/images/banner.png" alt=""/></div>
 
 <div id="wrapper">
   <!-- end #header -->
@@ -44,42 +45,22 @@
         <div id="sidebar">
           <ul>
             <li>
-              <h2>Aliquam tempus</h2>
+              <h2>Example: Eid salah times</h2>
 
-              <p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+              <p>Eid salah will be held at 8,9 and 10. Please read <a href>how to pray eid</a></p>
             </li>
             <li>
-              <h2>Categories</h2>
-              <ul>
-                <li><a href="#">Aliquam libero</a></li>
-                <li><a href="#">Consectetuer adipiscing elit</a></li>
-                <li><a href="#">Metus aliquam pellentesque</a></li>
-                <li><a href="#">Suspendisse iaculis mauris</a></li>
-                <li><a href="#">Urnanet non molestie semper</a></li>
-                <li><a href="#">Proin gravida orci porttitor</a></li>
-              </ul>
+              <h2>Example: Something that needs to be announced</h2>
+
+              <p>Something that needs to be announced...</p>
             </li>
             <li>
-              <h2>Blogroll</h2>
-              <ul>
-                <li><a href="#">Aliquam libero</a></li>
-                <li><a href="#">Consectetuer adipiscing elit</a></li>
-                <li><a href="#">Metus aliquam pellentesque</a></li>
-                <li><a href="#">Suspendisse iaculis mauris</a></li>
-                <li><a href="#">Urnanet non molestie semper</a></li>
-                <li><a href="#">Proin gravida orci porttitor</a></li>
-              </ul>
+              <h2>Example: Change in prayer times</h2>
+              <p>Prayer times have changes</p>
             </li>
             <li>
-              <h2>Archives</h2>
-              <ul>
-                <li><a href="#">Aliquam libero</a></li>
-                <li><a href="#">Consectetuer adipiscing elit</a></li>
-                <li><a href="#">Metus aliquam pellentesque</a></li>
-                <li><a href="#">Suspendisse iaculis mauris</a></li>
-                <li><a href="#">Urnanet non molestie semper</a></li>
-                <li><a href="#">Proin gravida orci porttitor</a></li>
-              </ul>
+              <h2>Etc....</h2>
+              <p>etc....</p>
             </li>
           </ul>
         </div>
@@ -91,8 +72,11 @@
   <!-- end #page -->
 </div>
 <div id="footer">
-  <p>&copy; 2012 Sitename.com. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by
-    <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+  <p>leytonstonemasjid@gmail.com | 02085397251 | Leytonstone Masjid
+    Dacre Road
+    Leytonstone
+    London
+    E11 3AG</p>
 </div>
 <!-- end #footer -->
 
