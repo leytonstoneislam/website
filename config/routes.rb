@@ -6,6 +6,8 @@ MosqueSite::Application.routes.draw do
   get "home/madrasah"
   get "home/services"
 
+  root :to => 'home#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
