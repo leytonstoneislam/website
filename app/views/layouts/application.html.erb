@@ -40,28 +40,20 @@
     <div id="page-bgtop">
       <div id="page-bgbtm">
         <div id="content">
+
           <%= yield %>
+
         </div>
         <div id="sidebar">
           <ul>
-            <li>
-              <h2>Example: Eid salah times</h2>
 
-              <p>Eid salah will be held at 8,9 and 10. Please read <a href>how to pray eid</a></p>
-            </li>
-            <li>
-              <h2>Example: Something that needs to be announced</h2>
+            <% @recent_entries.each do |entry| %>
+                <li>
+                  <h2><%= entry.title %></h2>
+                  <p><%= entry.content %></p>
+                </li>
+            <% end %>
 
-              <p>Something that needs to be announced...</p>
-            </li>
-            <li>
-              <h2>Example: Change in prayer times</h2>
-              <p>Prayer times have changes</p>
-            </li>
-            <li>
-              <h2>Etc....</h2>
-              <p>etc....</p>
-            </li>
           </ul>
         </div>
         <!-- end #sidebar -->
