@@ -10,4 +10,10 @@ class ApplicationController < ActionController::Base
     @recent_entries = Entry.all(:order => "id desc", :limit => 5)
   end
 
+  def validate_authentication
+    if session[:authenticated].nil?
+      redirect_to :controller => 'authentication', :action => 'login'
+    end
+  end
+
 end

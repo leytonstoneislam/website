@@ -1,10 +1,17 @@
 MosqueSite::Application.routes.draw do
+  resources :users
+
   get "home/index"
   get "home/prayer_times"
   get "home/contact_us"
   get "home/visit_us"
   get "home/madrasah"
   get "home/services"
+
+  get "authentication/login"
+  get "authentication/failed"
+  get "authentication/success"
+  post "authentication/authenticate"
 
   root :to => 'home#index'
 

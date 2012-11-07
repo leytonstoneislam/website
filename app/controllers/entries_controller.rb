@@ -1,4 +1,5 @@
 class EntriesController < ApplicationController
+  before_filter :validate_authentication
   # GET /entries
   # GET /entries.json
   def index
@@ -80,4 +81,7 @@ class EntriesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+
 end
