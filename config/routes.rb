@@ -7,6 +7,7 @@ MosqueSite::Application.routes.draw do
   get "home/visit_us"
   get "home/madrasah"
   get "home/services"
+  get "home/donate"
 
   get "authentication/login"
   get "authentication/failed"
