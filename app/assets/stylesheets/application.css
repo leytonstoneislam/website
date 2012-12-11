@@ -169,6 +169,12 @@ a:hover {
 
 }
 
+#madrashah-img {
+    margin-right: 10px;
+    margin-top: 50px;
+    float: right;
+}
+
 #menu {
     width: 1000px;
     height: 55px;
