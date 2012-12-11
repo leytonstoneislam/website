@@ -7,6 +7,19 @@ body {
     color: #3B3B3B;
 }
 
+div#main {
+
+    width: 1000px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    text-align: left;
+
+}
+
+
 h1, h2, h3 {
     margin: 0px;
     padding: 0px;
@@ -151,7 +164,9 @@ a:hover {
 #menu-wrapper {
     overflow: hidden;
     height: 56px;
-    background: #EDEDED;
+
+    width: 1000px;
+
 }
 
 #menu {
@@ -166,11 +181,13 @@ a:hover {
     padding: 0px;
     list-style: none;
     line-height: normal;
+
 }
 
 #menu li {
     float: left;
     border-right: 1px solid #FFFFFF;
+    background: #EDEDED;
 }
 
 #menu a {
