@@ -30,10 +30,10 @@
       <li <%if action_name == "prayer_times"%>class="current_page_item"<%end%>><%= link_to "Prayer times", :controller => "home", :action => "prayer_times" %></li>
       <li <%if action_name == "services"%>class="current_page_item"<%end%>><%= link_to "Services", controller: "home", :action => "services" %></li>
       <li <%if action_name == "madrasah"%>class="current_page_item"<%end%>><%= link_to "Madrasah", controller: "home", :action => "madrasah" %></li>
+      <li <%if action_name == "donate"%>class="current_page_item"<%end%>><%= link_to "Donate", controller: "home", :action => "donate" %></li>
       <li <%if action_name == "visit_us"%>class="current_page_item"<%end%>><%= link_to "Visit us", controller: "home", :action => "visit_us" %></li>
       <li <%if action_name == "contact_us"%>class="current_page_item"<%end%>><%= link_to "Contact us", controller: "home", :action => "contact_us" %></li>
-      <li <%if action_name == "donate"%>class="current_page_item"<%end%>><%= link_to "About us", controller: "home", :action => "about_us"%></li>
-      <li <%if action_name == "donate"%>class="current_page_item"<%end%>><%= link_to "Donate", controller: "home", :action => "donate" %></li>
+      <li <%if action_name == "about_us"%>class="current_page_item"<%end%>><%= link_to "About us", controller: "home", :action => "about_us"%></li>
     </ul>
   </div>
   <!-- end #menu -->
@@ -44,7 +44,6 @@
     <div id="logo">
       <h1><a href="#">Leytonstone <span>Masjid</span></a></h1>
 
-      <p>Muhammad Khan Road</p>
     </div>
   </div>
 </div>
