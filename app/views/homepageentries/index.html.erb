@@ -1,0 +1,23 @@
+<h1>Listing homepage entries</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @homepageentries.each do |homepageentry| %>
+  <tr>
+    <td><%= homepageentry.title %></td>
+    <td><%= link_to 'Show', homepageentry %></td>
+    <td><%= link_to 'Edit', edit_homepageentry_path(homepageentry) %></td>
+    <td><%= link_to 'Destroy', homepageentry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_homepageentry_path %>

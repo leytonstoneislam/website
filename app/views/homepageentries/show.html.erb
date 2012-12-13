@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @homepageentry.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @homepageentry.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_homepageentry_path(@homepageentry) %> |
+<%= link_to 'Back', homepageentries_path %>
