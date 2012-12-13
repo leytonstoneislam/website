@@ -54,7 +54,7 @@
   <div id="page">
     <div id="page-bgtop">
       <div id="page-bgbtm">
-        <div id="content">
+        <div id="<%if  controller.action_name == "index" and controller.controller_name == "home"%>home-content"><% else %>content"><% end %>
 
           <%= yield %>
 

@@ -274,6 +274,14 @@ a:hover {
     width: 700px;
 }
 
+#home-content {
+    float: right;
+    width: 300px;
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+    color: #787878;
+}
+
 .post {
     margin-bottom: 15px;
     border-bottom: 1px dashed #D8D8D8;
@@ -341,71 +349,71 @@ a:hover {
 
 #full {
     float: left;
-    width: 100%;
+    width: 700px;
     margin: 0px;
     padding: 30px 0px 0px 0px;
     color: #787878;
 }
 
-#full ul, #sidebar ul {
+#home-content ul, #full ul, #sidebar ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-#full li, #sidebar li {
+#home-content li, #full li, #sidebar li {
     margin: 0;
     padding: 0;
 }
 
-#full li ul, #sidebar li ul {
+#full li ul, #sidebar li ul, #home-content li ul{
     margin: 0px 0px;
     padding-bottom: 50px;
 }
 
-#full li li, #sidebar li li {
+#full li li, #sidebar li li, #home-content li li {
     border-bottom: 1px dashed #D8D8D8;
     margin: 0px 0px;
     padding: 5px 0px;
     border-left: none;
 }
 
-#full li li a, #sidebar li li a {
+#full li li a, #sidebar li li a, #home-content li li a{
     color: #3B3B3B;
 }
 
-#full li li span, #sidebar li li span {
+#full li li span, #sidebar li li span, #home-content li li span {
     display: block;
     padding: 0;
     font-size: 11px;
     font-style: italic;
 }
 
-#full h2, #sidebar h2 {
+#full h2, #sidebar h2, #home-content h2 {
     padding-bottom: 20px;
     font-size: 1.8em;
     color: #0285CE;
 }
 
-#full p, #sidebar p {
+#full p, #sidebar p, #home-content p {
     margin: 0px 0px 40px 0px;
     padding: 0px;
     text-align: justify;
 }
 
-#full a, #sidebar a {
+#full a, #sidebar a, #home-content a {
     border: none;
 }
 
-#sidebar a:hover, #full a:hover {
+#sidebar a:hover, #full a:hover, #home-content a:hover {
     text-decoration: underline;
 }
 
-#full h2 {
+#full h2, #home-content h2 {
 	font-size: 2.5em
 }
 
-#full p {
+#full p, #home-content p {
 	font-size: 1.5em
 }
 /* Calendar */

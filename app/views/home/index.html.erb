@@ -1,0 +1,8 @@
+<ul>
+<% @homepage_entries.each do |entry| %>
+    <li>
+      <h2><%= entry.title %></h2>
+      <p><%= entry.content %></p>
+    </li>
+<% end %>
+</ul>
