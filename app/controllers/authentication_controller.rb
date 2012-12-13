@@ -15,7 +15,7 @@ class AuthenticationController < ApplicationController
 
 
   def logout
-    session[:authenticated] = false
+    session[:authenticated] = nil
     redirect_to :controller => 'authentication', :action => 'login'
   end
 

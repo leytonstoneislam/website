@@ -14,6 +14,9 @@ MosqueSite::Application.routes.draw do
   get "authentication/failed"
   get "authentication/success"
   post "authentication/authenticate"
+  post "authentication/logout"
+
+  get "admin" => 'authentication#login'
 
   root :to => 'home#index'
 
