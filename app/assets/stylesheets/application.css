@@ -211,6 +211,43 @@ a:hover {
     border: none;
 }
 
+#admin-menu {
+    width: 700px;
+    height: 55px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+
+#admin-menu ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    line-height: normal;
+
+}
+
+#admin-menu li {
+    float: left;
+    border-right: 1px solid #FFFFFF;
+    background: #EDEDED;
+}
+
+#admin-menu a {
+    display: block;
+    letter-spacing: 1px;
+    line-height: 55px;
+    padding: 0px 22px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gilda Display', serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #3B3B3B;
+    border: none;
+}
+
 #menu a:hover, #menu .current_page_item a {
     background: #0193CC;
     text-decoration: none;
